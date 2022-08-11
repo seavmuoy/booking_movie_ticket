@@ -15,7 +15,10 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(
+        const Duration(
+          seconds: 3,
+        ), () {
       Navigator.pushReplacement(context,
           MaterialPageRoute(builder: (context) => const HomeCinePage()));
     });
@@ -24,7 +27,7 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: const Color.fromARGB(255, 169, 37, 27),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -38,7 +41,18 @@ class _SplashState extends State<Splash> {
             ),
             const CircularProgressIndicator(
               color: Colors.white,
-            )
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Text(
+              'Welcome to HomeOfMovie',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: Color.fromARGB(255, 128, 103, 22),
+              ),
+            ),
           ],
         ),
       ),
