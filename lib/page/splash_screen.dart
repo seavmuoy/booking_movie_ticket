@@ -1,6 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:booking_movie/page/home.dart';
+import 'package:booking_movie/Cinema/home_cine_page.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
@@ -14,16 +14,10 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
-    // ignore: todo
-    // TODO: implement initstate
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-              builder: (context) => const MyHomePage(
-                    title: 'Home Page',
-                  )));
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (context) => const HomeCinePage()));
     });
   }
 
