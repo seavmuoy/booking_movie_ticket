@@ -1,19 +1,14 @@
-
 class TrailersMovie {
-
   final String image;
 
   const TrailersMovie(this.image);
 
   static List<TrailersMovie> listTrailers = [
-
-    TrailersMovie('Assets/cinema/movie6.jpg'),
-    TrailersMovie('Assets/cinema/movie5.jpg'),
-    TrailersMovie('Assets/cinema/movie1.jpg'),
-    TrailersMovie('Assets/cinema/movie2.jpg'),
-    TrailersMovie('Assets/cinema/movie3.jpg'),
-    TrailersMovie('Assets/cinema/movie4.jpg'),
+    TrailersMovie('lib/assets/movie/movie6.jpg'),
+    TrailersMovie('lib/assets/movie/movie5.jpg'),
+    TrailersMovie('lib/assets/movie/movie1.jpg'),
+    TrailersMovie('lib/assets/movie/movie2.jpg'),
+    TrailersMovie('lib/assets/movie/movie3.jpg'),
+    TrailersMovie('lib/assets/movie/movie4.jpg'),
   ];
-
 }
-

@@ -22,7 +22,7 @@ class MovieModel {
     const MovieModel(
         id: '1',
         name: 'Venom: Let There Be Carnage',
-        image: 'Assets/cinema/movie1.jpg',
+        image: 'lib/assets/movie/movie1.jpg',
         qualification: 5,
         year: 2021,
         duration: '1h 37m',
@@ -32,7 +32,7 @@ class MovieModel {
     const MovieModel(
         id: '2',
         name: 'Fast & Furious 9',
-        image: 'Assets/cinema/movie2.jpg',
+        image: 'lib/assets/movie/movie2.jpg',
         qualification: 4,
         year: 2021,
         duration: '2h 25m',
@@ -42,7 +42,7 @@ class MovieModel {
     const MovieModel(
         id: '3',
         name: 'No Time to Die',
-        image: 'Assets/cinema/movie3.jpg',
+        image: 'lib/assets/movie/movie3.jpg',
         qualification: 3.9,
         year: 2021,
         duration: '2h 43m',
@@ -52,7 +52,7 @@ class MovieModel {
     const MovieModel(
         id: '4',
         name: 'Free Guy',
-        image: 'Assets/cinema/movie4.jpg',
+        image: 'lib/assets/movie/movie4.jpg',
         qualification: 4.5,
         year: 2021,
         duration: '1h 55m',
@@ -62,7 +62,7 @@ class MovieModel {
     const MovieModel(
         id: '5',
         name: 'Reminiscence',
-        image: 'Assets/cinema/movie5.jpg',
+        image: 'lib/assets/movie/movie5.jpg',
         qualification: 4,
         year: 2021,
         duration: '1h 56m',
@@ -72,7 +72,7 @@ class MovieModel {
     const MovieModel(
         id: '6',
         name: 'Shang-Chi',
-        image: 'Assets/cinema/movie6.jpg',
+        image: 'lib/assets/movie/movie6.jpg',
         qualification: 4.7,
         year: 2021,
         duration: '2h 12m',
@@ -82,7 +82,7 @@ class MovieModel {
     const MovieModel(
         id: '7',
         name: 'Infinite',
-        image: 'Assets/cinema/movie7.jpg',
+        image: 'lib/assets/movie/movie7.jpg',
         qualification: 3.6,
         year: 2021,
         duration: '1h 46m',
@@ -92,7 +92,7 @@ class MovieModel {
     const MovieModel(
         id: '8',
         name: "Don't Breathe 2",
-        image: 'Assets/cinema/movie8.jpg',
+        image: 'lib/assets/movie/movie8.jpg',
         qualification: 4.2,
         year: 2021,
         duration: '1h 38m',
@@ -102,7 +102,7 @@ class MovieModel {
     const MovieModel(
         id: '9',
         name: 'Jungle Cruise',
-        image: 'Assets/cinema/movie9.webp',
+        image: 'lib/assets/movie/movie9.webp',
         qualification: 3.2,
         year: 2021,
         duration: '2h 7m',
@@ -112,7 +112,7 @@ class MovieModel {
     const MovieModel(
         id: '10',
         name: 'Black Widow',
-        image: 'Assets/cinema/movie10.jpg',
+        image: 'lib/assets/movie/movie10.jpg',
         qualification: 4.3,
         year: 2021,
         duration: '2h 14m',
@@ -122,7 +122,7 @@ class MovieModel {
     const MovieModel(
         id: '11',
         name: 'The Forever Purge',
-        image: 'Assets/cinema/movie11.jpg',
+        image: 'lib/assets/movie/movie11.jpg',
         qualification: 3.9,
         year: 2021,
         duration: '1h 43m',
@@ -132,7 +132,7 @@ class MovieModel {
     const MovieModel(
         id: '12',
         name: 'The Tomorrow War',
-        image: 'Assets/cinema/movie12.jpg',
+        image: 'lib/assets/movie/movie12.jpg',
         qualification: 4.4,
         year: 2021,
         duration: '2h 18m',
@@ -142,7 +142,7 @@ class MovieModel {
     const MovieModel(
         id: '13',
         name: 'The Ice Road',
-        image: 'Assets/cinema/movie13.jpg',
+        image: 'lib/assets/movie/movie13.jpg',
         qualification: 4.1,
         year: 2021,
         duration: '1h 48m',
@@ -152,7 +152,7 @@ class MovieModel {
     const MovieModel(
         id: '14',
         name: "Hitman's Wife's Bodyguard",
-        image: 'Assets/cinema/movie14.jpg',
+        image: 'lib/assets/movie/movie14.jpg',
         qualification: 4.4,
         year: 2021,
         duration: '1h 40m',
