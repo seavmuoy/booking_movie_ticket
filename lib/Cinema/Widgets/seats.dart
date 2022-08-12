@@ -31,10 +31,10 @@ class SeatsRow extends StatelessWidget {
                     builder: (_, state) => PaintChair(
                         color: state.selectedSeats.contains('$rowSeats${i + 1}')
                             ? Colors.amber
-                            : Colors.white)));
+                            : Colors.blue)));
           }
 
-          return PaintChair();
+          return const PaintChair();
         }),
       ),
     );

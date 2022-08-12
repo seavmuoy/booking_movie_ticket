@@ -39,8 +39,8 @@ class BuyTicketPage extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(begin: Alignment.bottomRight, colors: [
                   const Color(0xff21242C),
-                  const Color(0xff21242C).withOpacity(.9),
-                  const Color(0xff21242C).withOpacity(.1),
+                  const Color(0xff28242C).withOpacity(.9),
+                  const Color(0xff22242C).withOpacity(.1),
                 ]),
               ),
               child: ClipRRect(
@@ -106,7 +106,7 @@ class BuyTicketPage extends StatelessWidget {
                   const PainterScreenMovie(),
                   const TextFrave(
                       text: 'Screen',
-                      color: Colors.white,
+                      color: Colors.yellow,
                       fontWeight: FontWeight.w500),
                   const SizedBox(height: 40.0),
                   SizedBox(
@@ -138,10 +138,10 @@ class BuyTicketPage extends StatelessWidget {
                 alignment: Alignment.center,
                 height: 55,
                 decoration: BoxDecoration(
-                    color: Colors.amber,
+                    color: const Color.fromARGB(255, 169, 37, 27),
                     borderRadius: BorderRadius.circular(8.0)),
                 child: const TextFrave(
-                    text: 'Buy Ticket \$ 55.0', fontWeight: FontWeight.bold),
+                    text: 'Buy Ticket ', fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -168,9 +168,9 @@ class _ItemsDescription extends StatelessWidget {
         children: [
           Row(
             children: const [
-              Icon(Icons.circle, color: Colors.white, size: 10),
+              Icon(Icons.circle, color: Colors.blue, size: 10),
               SizedBox(width: 10.0),
-              TextFrave(text: 'Free', fontSize: 20, color: Colors.white)
+              TextFrave(text: 'Free', fontSize: 20, color: Colors.blue)
             ],
           ),
           Row(
@@ -185,7 +185,11 @@ class _ItemsDescription extends StatelessWidget {
             children: const [
               Icon(Icons.circle, color: Colors.amber, size: 10),
               SizedBox(width: 10.0),
-              TextFrave(text: 'Selected', fontSize: 20, color: Colors.amber)
+              TextFrave(
+                text: 'Selected',
+                fontSize: 20,
+                color: Colors.amber,
+              )
             ],
           ),
         ],
@@ -213,7 +217,7 @@ class _ItemTime extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 18.0),
               decoration: BoxDecoration(
                   color: state.time == time
-                      ? Colors.amber
+                      ? const Color.fromARGB(255, 169, 37, 27)
                       : const Color(0xff4D525A),
                   borderRadius: BorderRadius.circular(8.0)),
               child: TextFrave(text: time, color: Colors.white, fontSize: 16)),
@@ -242,7 +246,7 @@ class _ItemDate extends StatelessWidget {
             width: 75,
             decoration: BoxDecoration(
                 color: state.date == date.number
-                    ? Colors.amber
+                    ? Color.fromARGB(255, 218, 36, 23)
                     : const Color(0xff4A5660),
                 borderRadius: BorderRadius.circular(15.0)),
             child: Column(

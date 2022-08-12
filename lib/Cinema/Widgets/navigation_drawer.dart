@@ -1,7 +1,11 @@
 import 'dart:ffi';
 
 import 'package:booking_movie/Cinema/home_cine_page.dart';
+import 'package:booking_movie/Dashboard/Pages/account.dart';
+import 'package:booking_movie/Dashboard/Pages/movies.dart';
 import 'package:flutter/material.dart';
+
+import '../../Dashboard/Pages/setting.dart';
 
 class NavigationDrawer extends StatelessWidget {
   final padding = const EdgeInsets.symmetric(horizontal: 20);
@@ -10,13 +14,13 @@ class NavigationDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = 'Liy';
-    final email = 'Chan';
-    final urlImag =
+    const name = 'Liy';
+    const email = 'Chan';
+    const urlImag =
         'https://static.wixstatic.com/media/dc4461_a4dffda130894178b0fa42d4367d2ced~mv2.png/v1/fill/w_135,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2022-06-16_09-58-43-removebg-preview_edited.png';
     return Drawer(
       child: Material(
-        color: Color.fromARGB(255, 133, 18, 10),
+        color: Color.fromARGB(255, 169, 37, 27),
         child: ListView(
           padding: padding,
           children: <Widget>[
@@ -24,7 +28,7 @@ class NavigationDrawer extends StatelessWidget {
               urlImag: urlImag,
               name: name,
               email: email,
-              onClicked: () {},
+              onClicked: () => selectedItem(context, 1),
             ),
             const SizedBox(height: 48),
             buildMenuItem(
@@ -41,11 +45,13 @@ class NavigationDrawer extends StatelessWidget {
             buildMenuItem(
               text: 'Movie',
               icon: Icons.movie_creation,
+              onClicked: () => selectedItem(context, 2),
             ),
             const SizedBox(height: 16),
             buildMenuItem(
               text: 'Cinema',
               icon: Icons.theaters,
+              onClicked: () => selectedItem(context, 3),
             ),
             const SizedBox(
               height: 28,
@@ -59,6 +65,7 @@ class NavigationDrawer extends StatelessWidget {
             buildMenuItem(
               text: 'Setting',
               icon: Icons.settings,
+              onClicked: () => selectedItem(context, 4),
             ),
           ],
         ),
@@ -94,12 +101,27 @@ class NavigationDrawer extends StatelessWidget {
         break;
 
       case 1:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => const Account(),
+        ));
         break;
 
       case 2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => const Movies(),
+        ));
         break;
 
       case 3:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => const Movies(),
+        ));
+        break;
+
+      case 4:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => const Setting(),
+        ));
         break;
     }
   }

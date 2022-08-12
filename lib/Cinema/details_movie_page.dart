@@ -83,8 +83,10 @@ class DetailsMoviePage extends StatelessWidget {
                 RatingBar.builder(
                     itemSize: 30,
                     initialRating: movieModel.qualification,
-                    itemBuilder: (_, i) => const Icon(Icons.star_rate_rounded,
-                        color: Colors.amber),
+                    itemBuilder: (_, i) => const Icon(
+                          Icons.star_rate_rounded,
+                          color: Colors.amber,
+                        ),
                     onRatingUpdate: (_) {}),
                 const SizedBox(height: 15.0),
                 TextFrave(
@@ -139,7 +141,7 @@ class DetailsMoviePage extends StatelessWidget {
                 alignment: Alignment.center,
                 height: 60,
                 decoration: BoxDecoration(
-                    color: Colors.amber,
+                    color: Color.fromARGB(255, 169, 37, 27),
                     borderRadius: BorderRadius.circular(8.0)),
                 child: const TextFrave(
                     text: 'Buy Ticket', fontWeight: FontWeight.bold),

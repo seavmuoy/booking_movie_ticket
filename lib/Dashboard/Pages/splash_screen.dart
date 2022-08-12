@@ -50,7 +50,7 @@ class _SplashState extends State<Splash> {
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
-                color: Color.fromARGB(255, 128, 103, 22),
+                color: Colors.white,
               ),
             ),
           ],
