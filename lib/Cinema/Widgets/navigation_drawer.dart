@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:booking_movie/Cinema/home_cine_page.dart';
 import 'package:booking_movie/Dashboard/Pages/account.dart';
+import 'package:booking_movie/Dashboard/Pages/cinema.dart';
 import 'package:booking_movie/Dashboard/Pages/movies.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +16,8 @@ class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const name = 'Liy';
-    const email = 'Chan';
     const urlImag =
-        'https://static.wixstatic.com/media/dc4461_a4dffda130894178b0fa42d4367d2ced~mv2.png/v1/fill/w_135,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2022-06-16_09-58-43-removebg-preview_edited.png';
+        'https://www.pngall.com/wp-content/uploads/5/Cute-Anime-Girl-PNG-Photo.png';
     return Drawer(
       child: Material(
         color: Color.fromARGB(255, 169, 37, 27),
@@ -27,8 +27,13 @@ class NavigationDrawer extends StatelessWidget {
             buildHeader(
               urlImag: urlImag,
               name: name,
-              email: email,
               onClicked: () => selectedItem(context, 1),
+            ),
+            Divider(
+              color: Colors.white54,
+            ),
+            const SizedBox(
+              height: 28,
             ),
             const SizedBox(height: 48),
             buildMenuItem(
@@ -114,7 +119,7 @@ class NavigationDrawer extends StatelessWidget {
 
       case 3:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const Movies(),
+          builder: (context) => const Cinema(),
         ));
         break;
 
@@ -129,7 +134,6 @@ class NavigationDrawer extends StatelessWidget {
   Widget buildHeader({
     required String urlImag,
     required String name,
-    required String email,
     required VoidCallback onClicked,
   }) =>
       InkWell(
@@ -158,13 +162,6 @@ class NavigationDrawer extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 4,
-                  ),
-                  Text(
-                    email,
-                    style: const TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                    ),
                   ),
                 ],
               ),

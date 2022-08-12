@@ -115,7 +115,7 @@ class DetailsPaymentPage extends StatelessWidget {
                       width: 120,
                       child: Image(
                           image: NetworkImage(
-                              'https://static.wixstatic.com/media/dc4461_a4dffda130894178b0fa42d4367d2ced~mv2.png/v1/fill/w_135,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2022-06-16_09-58-43-removebg-preview_edited.png')),
+                              'https://i.stack.imgur.com/iqptc.png')),
                     )
                   ],
                 ),

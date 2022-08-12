@@ -14,7 +14,7 @@ class Account extends StatelessWidget {
           elevation: 0.3,
           centerTitle: true,
           title: const TextFrave(
-              text: 'Your Info',
+              text: 'Profile',
               color: Color.fromARGB(255, 139, 154, 186),
               fontWeight: FontWeight.w500,
               fontSize: 21)),
