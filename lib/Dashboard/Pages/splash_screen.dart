@@ -48,8 +48,8 @@ class _SplashState extends State<Splash> {
             const Text(
               'Welcome to HomeOfMovie',
               style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                fontSize: 18,
                 color: Colors.white,
               ),
             ),
