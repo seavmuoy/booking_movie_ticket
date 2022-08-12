@@ -7,6 +7,7 @@ class Movies extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String name = "movie";
     return Scaffold(
       backgroundColor: const Color(0xff21242C),
       appBar: AppBar(
@@ -45,19 +46,30 @@ class Movies extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 20, horizontal: 15),
                 child: Column(
                   children: [
-                    Padding(
-                        padding: EdgeInsets.symmetric(vertical: 10),
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              child: Image.asset(
-                                "lib/assets/movie/movie1.jpg",
-                                height: 70,
-                                width: 90,
+                    for (int i = 1; i < 10; i++)
+                      Padding(
+                          padding: EdgeInsets.symmetric(vertical: 10),
+                          child: Row(
+                            children: [
+                              ClipRRect(
+                                child: Image.asset(
+                                  "lib/assets/movie/movie4.jpg",
+                                  height: 110,
+                                  width: 80,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
-                            )
-                          ],
-                        ))
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Spacer(),
+                              Icon(
+                                Icons.arrow_forward_ios_sharp,
+                                color: Colors.white,
+                                size: 25,
+                              )
+                            ],
+                          ))
                   ],
                 ),
               )
